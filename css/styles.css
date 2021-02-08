@@ -1,0 +1,13 @@
+/* Page Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightblue;
+}
+
+.grid {
+  display: grid;
+}
