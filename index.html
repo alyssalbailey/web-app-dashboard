@@ -114,79 +114,95 @@
     </div>
 
     <!-- new member widget-->
-    <section>
+    <section class="members">
       <h3>New Members</h3>
-      <div class="member-profile">
-        <div>
-          <img class="member-image" alt="member portrait" src="images/member-1.jpg">
-          <p>Victoria Chambers</p>
-          <a href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
-          <p>10/15/15</p>
-        </div>
+
+      <div class="members-container">
+          <img class="profile-image" src="images/member-1.jpg">
+          <div class="members-text">
+            <p>Victoria Chambers</p>
+            <a href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+         </div>
+          <p>10/15/15</p>  
      </div>
    
-      <div class="member-profile">
-        <div>
-          <img class="member-image" alt="member portrait" src="images/member-2.jpg">
+      <div class="members-container">
+        <img class="profile-image" src="images/member-2.jpg">
+        <div class="members-text">
           <p>Dale Byrd</p>
-          <a href="mailto:dale.byrd52@example.com">dale.byrd52@example.com</a>
-          <p>10/15/15</p>
-        </div>
+            <a href="mailto:dale.byrd52@example.com">dale.byrd52@example.com</a>
+          </div>
+            <p>10/15/15</p>
      </div>
 
-      <div class="member-profile">
-        <div>
-          <img class="member-image" alt="member portrait" src="images/member-3.jpg">
+      <div class="members-container">
+        <img class="profile-image" src="images/member-3.jpg">
+        <div class="members-text">
           <p>Dawn Wood</p>
           <a href="mailto:dawn.wood1@example.com">dawn.wood1@example.com</a>
-          <p>10/15/15</p>
         </div>    
+        <p>10/15/15</p>
       </div>
 
-      <div class="member-profile">
-        <div>
-          <img class="member-image" alt="member portrait" src="images/member-4.jpg">
+      <div class="members-container">
+        <img class="profile-image" src="images/member-4.jpg">
+        <div class="members-text">
           <p>Dan Oliver</p>
           <a href="mailto:dan.oliver82@example.com">dan.oliver82@example.com</a>
-          <p>10/15/15</p>
         </div>
+        <p>10/15/15</p>
       </div>
     </section>
 
-    <section>
+    <section class="activity">
       <h3>Recent Activity</h3>
-      <div class="recent-activity">
-        <div class="activity-notification">
-          <div>
-            <img class="member-image" alt="member portrait" src="images/member-1.jpg">
+
+      <div class="activity-container">
+          <img class="profile-image"  src="images/member-1.jpg">
+          <div class="activity-text">
             <p>Victoria Chambers commented on YourApp's SEO Tips</p>
             <p>4 hours ago</p>
           </div>    
 
           <div>
-            <img class="member-image" alt="member portrait" src="images/member-2.jpg">
-            <p>Dale Byrd liked the post Facebook's Changes for 2016</p>
-            <p>5 hours ago</p>
+            <img class="profile-image" src="images/member-2.jpg">
+            <div class="activity-text">
+              <p>Dale Byrd liked the post Facebook's Changes for 2016</p>
+              <p>5 hours ago</p>
+            </div>
           </div>   
 
           <div>
-            <img class="member-image" alt="member portrait" src="images/member-3.jpg">
-            <p>Dawn Wood commented on Facebook's Changes for 2016</p>
-            <p>5 hours ago</p>
+            <img class="profile-image" src="images/member-3.jpg">
+            <div class="activity-text">
+              <p>Dawn Wood commented on Facebook's Changes for 2016</p>
+              <p>5 hours ago</p>
+          </div>
           </div>   
 
           <div>
-            <img class="member-image" alt="member portrait" src="images/member-4.jpg">
-            <p>Dan Oliver posted YourApp's SEO Tips</p>
-            <p>1 day ago</p>
-          </div>   
+            <img class="profile-image" src="images/member-4.jpg">
+            <div class="activity-text">
+              <p>Dan Oliver posted YourApp's SEO Tips</p>
+              <p>1 day ago</p>
+            </div>
+          </div>  
+
         </div>
-
-
 
       </div>
     </section>
 
+    <!-- messaging section-->
+    <section>
+      <h3>Message User</h3>
+
+        <form class="widget-container">
+          <input type="text" id="userField" class="form-field" placeholder="Search for user">
+          <textarea id="messageField" class="form-area" placeholder="Message for user"></textarea>
+          <button class="button-primary" id="send">Send</button>
+        </form>
+    </section>
 
         </div>
     </main>
