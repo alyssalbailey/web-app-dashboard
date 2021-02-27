@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="grid-container">
   <header>
       <h1>YourApp&trade;</h1>
     <div id="#notifications">
@@ -31,7 +31,7 @@
 
    
     <div>
-      <nav class="nav">
+      <nav class="navigation">
         <a class="nav-link" href="#dashboard">
             <img class="nav-icon" alt="dashboard" src="icons/icon-dashboard.svg">
         </a>
@@ -50,7 +50,7 @@
 
   <div>
     <main>
-        <div class="grid">
+        <div>
     <!-- alert banner -->
     <div class="alert" id="alert">
       <!--JS will insert the alert right here-->
@@ -68,6 +68,7 @@
         </ul>
      </div>
      <div class="widget-container-full">
+      <img class="placeholder-graph" src="images/kitten.jpg">
         <!-- element line graph will attach to-->
         <canvas id="traffic-chart"></canvas>
      </div>
@@ -193,7 +194,7 @@
       </div>
     </section>
 
-    <!-- messaging section-->
+    <!-- messaging widget-->
     <section>
       <h3>Message User</h3>
 
@@ -209,15 +210,17 @@
       <h3>Settings</h3>
 <!-- custom CSS toggle code-->
 
-<!-- custom CSS toggle code-->
-<select class="form-field" id="timezone">
-  <option disabled selected>Select a Timezone</option>
-  <option>Eastern</option>
-
+    <!-- custom CSS toggle code-->
+    <select class="form-field" id="timezone">
+      <option disabled selected>Select a Timezone</option>
+      <option>Eastern</option>
 <!-- more options-->
-</select>
-    </section>
+      </select>
+        <div class="settings-button">
+            <button class="button-primary" id="save">Save</button>
+            <button class="button-disabled" id="cancel">Cancel</button>
         </div>
+      </section>
     </main>
 </div>
 
