@@ -93,9 +93,11 @@ header {
 .navigation {
   grid-area: navigation;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
   justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  height: 50px;
   background-color: #4d4c72;
 }
 
@@ -164,10 +166,14 @@ h3 {
   margin: 10px;
 }
 
+.social-image {
+  background-color: #7377bf;
+  border-radius: 50%;
+}
+
 .social-svg {
   fill: white;
   stroke: #7377bf;
-  margin: 5px;
 }
 
 .social-text :first-child {
@@ -228,6 +234,7 @@ h3 {
   margin: 5px;
 }
 
+/* Messaging Area */
 .widget-container-full,
 .widget-container-half {
   width: 95vw;
@@ -254,6 +261,21 @@ h3 {
 .form-area {
   height: 20vh;
   font-family: "Roboto", sans-serif;
+}
+
+#timezone {
+  font-family: "Roboto", sans-serif;
+  color: #808080;
+  background-color: #fbfbfb;
+  font-size: 12px;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+  line-height: 2em;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .button-primary,
