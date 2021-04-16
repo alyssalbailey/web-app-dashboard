@@ -16,3 +16,4 @@ alertBanner.addEventListener ('click', e => {
         alert.style.display = "none"
     }
 });
+
