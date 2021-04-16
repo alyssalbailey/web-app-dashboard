@@ -43,8 +43,6 @@ input {
   line-height: 2em;
 }
 
-/* Media Queries: Mobile -----
-@media (min-width: 320px) { */
 header {
   display: flex;
   grid-area: header;
@@ -149,6 +147,9 @@ h3 {
 
 .platform-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #d1d1d1;
   background-color: #fbfbfb;
   color: #666666;
@@ -162,6 +163,19 @@ h3 {
   margin: 5px;
 }
 
+.social-text :first-child {
+  color: #7377bf;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.social-text :nth-child(2) {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1;
+}
+
 /* Members Container */
 .members-container {
   display: flex;
@@ -173,8 +187,8 @@ h3 {
 
 .profile-image {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   margin: 5px;
   border: #d1d1d1 0.5px solid;
 }
@@ -186,6 +200,11 @@ h3 {
   color: #808080;
   margin-left: 5px;
 }
+
+/* Used to break the email address to a new line; however, <wbr> in HTML works best */
+/* .members-text a {
+  word-break: break-all;
+} */
 
 .date {
   font-size: 12px;
@@ -235,7 +254,8 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
-.button-primary {
+.button-primary,
+.button-disabled {
   background-color: #7377bf;
   color: white;
   text-transform: uppercase;
@@ -247,6 +267,13 @@ h3 {
   margin: 0 auto;
   display: block;
 }
+
+.button-disabled {
+  background-color: #b2b2b2;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
 /* end of mobile media query */
 
 /* Media Queries: Tablet ----- */
