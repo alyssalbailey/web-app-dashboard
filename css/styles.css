@@ -324,64 +324,77 @@ h3 {
       "navigation main";
   }
 
+  h1 {
+    font-size: 26px;
+  }
+  .name {
+    font-size: 21px;
+  }
+
   .navigation {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    align-content: flex-start;
     height: 100%;
   }
 
-  .main {
-    display: grid;
-    grid-template-columns: 50%;
+  .nav-icon {
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
-  /* .main-header is working appropriately */
   .main-header {
     display: flex;
     grid-column: 2 / span 6;
-    border: 1px red solid;
   }
 
-  .traffic,
-  .social {
-    grid-column: 2 / span 2;
-    display: grid;
-  }
+  /* Commented out per TA's recommendation - added to check */
 
-  .daily,
-  .members,
-  .message {
-    grid-column: 2 / span 1;
-    display: grid;
-    border: purple solid 1px;
-  }
-
-  .mobile,
-  .activity,
-  .settings {
-    grid-column: 2 / span 1;
-    display: grid;
-    border: green solid 1px;
-  }
-
-  .widget-container-full {
-    width: 90vw;
-    display: grid;
-  }
-
-  .widget-container-half {
-    width: 45vw;
-    display: grid;
+  .main {
+    grid-template-columns: 50%;
   }
 
   .social-container {
     display: grid;
-    width: 100%;
-    border: orange 1px solid;
+    grid-template-columns: repeat(3, 33%);
+    justify-self: center;
   }
 
   .platform-container {
-    border: 1px red solid;
+    margin: 10px;
+    width: 95%;
+  }
+
+  /* Traffic data graph */
+  .traffic,
+  .social {
+    grid-column: 2 / span 2;
+    border: 1px solid red;
+  }
+
+  /* New Members Section */
+  .daily,
+  .members,
+  .message {
+    /* grid-column: 2 / span 1; */
+    grid-column: 2 / span 2;
+    border: 1px solid orange;
+  }
+
+  /*Recent Activity Section */
+  .mobile,
+  .activity,
+  .settings {
+    grid-column: 2 / span 2;
+    border: 1px solid purple;
+  }
+
+  .widget-container-full {
+    width: 90vw;
+  }
+
+  .widget-container-half {
+    width: 45vw;
   }
 }
 

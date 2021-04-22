@@ -17,3 +17,26 @@ alertBanner.addEventListener ('click', e => {
     }
 });
 
+//Peparing the data for the charts 
+
+var stars = [135850, 52122, 148825, 16939, 9763];
+var frameworks = ['React', 'Angular', 'Vue', 'Hyperapp', 'Omi'];
+
+// Bar Chart
+
+var ctx = document.getElementById('traffic-chart');
+
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: frameworks,
+        datasets: [{
+            label: 'Popular JavaScript Frameworks',
+            data: stars
+        }]
+    }
+    options: {} // this is optional
+ }
+)
+
+
