@@ -144,7 +144,7 @@ h3 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   padding: 15px;
 }
 
@@ -326,7 +326,13 @@ h3 {
 
   h1 {
     font-size: 26px;
+    margin-left: 15px;
   }
+
+  h3 {
+    font-size: 14px;
+  }
+
   .name {
     font-size: 21px;
   }
@@ -343,21 +349,14 @@ h3 {
     margin-top: 20px;
   }
 
-  .main-header {
-    display: flex;
-    grid-column: 2 / span 6;
-  }
-
-  /* Commented out per TA's recommendation - added to check */
-
   .main {
+    display: grid;
     grid-template-columns: 50%;
   }
 
   .social-container {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    justify-self: center;
+    flex-direction: row;
+    border-top: 1px solid #d2d2d2;
   }
 
   .platform-container {
@@ -367,26 +366,24 @@ h3 {
 
   /* Traffic data graph */
   .traffic,
-  .social {
-    grid-column: 2 / span 2;
-    border: 1px solid red;
+  .social-container {
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid #d2d2d2;
   }
 
   /* New Members Section */
   .daily,
   .members,
   .message {
-    /* grid-column: 2 / span 1; */
-    grid-column: 2 / span 2;
-    border: 1px solid orange;
+    grid-column: 1 / span 1;
   }
 
   /*Recent Activity Section */
   .mobile,
   .activity,
   .settings {
-    grid-column: 2 / span 2;
-    border: 1px solid purple;
+    grid-column: 2 / span 1;
+    border-left: 1px solid #d2d2d2;
   }
 
   .widget-container-full {
