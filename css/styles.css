@@ -358,7 +358,14 @@ h3 {
     grid-column: 1 / span 2;
   }
 
-  /* Do I want this to be a flex-direction row?*/
+  .traffic-nav {
+    justify-content: flex-end;
+  }
+
+  .traffic-nav li {
+    margin: 0 20px;
+  }
+
   .social-container {
     flex-direction: row;
     flex-basis: 33.3%;

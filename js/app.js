@@ -1,5 +1,5 @@
 
-const alert =  document.getElementById('alert');
+const alertBanner =  document.getElementById('alert');
 
 // create the html for the banner
 alertBanner.innerHTML = 
@@ -26,7 +26,7 @@ let trafficData = {
     datasets: [{
         data: [750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250],
         backgroundColor: 'rgba(116, 119, 191,.3)',
-        borderWidth: 1;
+        borderWidth: 1,
     }]
 };
 
