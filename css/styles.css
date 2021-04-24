@@ -148,11 +148,11 @@ h3 {
   padding: 15px;
 }
 
-.traffic,
-.daily-traffic {
+.traffic-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
 .social-container {
@@ -354,19 +354,25 @@ h3 {
     grid-template-columns: 50%;
   }
 
+  .main-header {
+    grid-column: 1 / span 2;
+  }
+
+  /* Do I want this to be a flex-direction row?*/
   .social-container {
     flex-direction: row;
+    flex-basis: 33.3%;
+    width: 100%;
     border-top: 1px solid #d2d2d2;
   }
 
   .platform-container {
-    margin: 10px;
-    width: 95%;
+    padding: 5px;
   }
 
   /* Traffic data graph */
   .traffic,
-  .social-container {
+  .social {
     grid-column: 1 / span 2;
     border-bottom: 1px solid #d2d2d2;
   }
