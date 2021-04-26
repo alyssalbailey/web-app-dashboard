@@ -94,6 +94,14 @@ header {
   margin: 8px;
 }
 
+#alert {
+  background-color: #7477bf;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px;
+  color: white;
+}
+
 /* Navigation Buttons */
 
 .navigation {
