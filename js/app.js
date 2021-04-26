@@ -47,14 +47,84 @@ let trafficOptions = {
     }
 };
 
-//Creating the actual chart
-function createTrafficChart(data) {
+//Creating the actual chart{
     let trafficChart = new Chart(trafficCanvas, {
         type: 'line',
         data: trafficData,
         options: trafficOptions
     });
-}
 
 
+    // Bar Graph
 
+    const dailyCanvas = document.getElementById('daily-chart');
+
+    let dailyData = {
+        labels: ["S", "M", "T", "W", "T", "F", "S"],
+        datasets: [{
+            Label: '# of Hits',
+            data: [75, 115, 175, 125, 225, 200, 100],
+            backgroundColor: '#7477BF',
+            borderWidth: 1,
+        }]
+    };
+
+    const dailyOptions = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        },
+        plugins: {
+            legend: {
+            display: false
+            }
+        }
+    };
+
+// Creating the actual chart
+
+let dailyChart = new Chart(dailyCanvas, {
+    type: 'bar',
+    data: dailyData,
+    options: dailyOptions
+
+});
+
+
+// Mobile Chart
+const mobileCanvas = document.getElementById('mobile-chart');
+
+const mobileData = {
+    labels: ["Desktop", "Tablet", "Phones"],
+    datasets: [{
+        label: '# of Users',
+        data: [2000, 550, 500],
+        borderWidth: 0,
+        backgroundColor: [
+            '#7477BF',
+            '#78CF82',
+            '#51B6C8'
+        ]
+    }]
+};
+
+const mobileOptions = {
+    plugins: {
+        legend: {
+            position: 'right',
+            labels: {
+                boxWidth: 20,
+                fontStyle: 'bold',
+            }
+        }
+    }
+};
+
+// Creating the actual chart
+
+let mobileChart = new Chart(mobileCanvas, {
+    type: 'doughnut',
+    data: mobileData,
+    options: mobileOptions
+}); 
