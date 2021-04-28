@@ -1,6 +1,7 @@
 
 const alertBanner =  document.getElementById('alert');
 
+
 // create the html for the banner
 alertBanner.innerHTML = 
 `
@@ -128,3 +129,26 @@ let mobileChart = new Chart(mobileCanvas, {
     data: mobileData,
     options: mobileOptions
 }); 
+
+
+// Variables for the Message Section
+const user = document.getElementById('userField');
+const message = document.getElementById('messageField');
+const send = document.getElementById('send');
+
+// Event Listener on send
+
+send.addEventListener ('click', () => {
+
+// ensure user and message fields are filled out
+    const element = e.target;
+    if (user.value === "" && message.value === "") {
+        alert("Please fill out user and message fields before sending");
+    } else if (user.value === "") {
+        alert("Please fill out user field before sending");
+    } else if (message.value === "") {
+        alert("Please fill out message field before sending");
+    } else {
+        alert(`Message successfully sent to: ${user.value}`);
+    }
+});
