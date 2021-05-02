@@ -6,7 +6,7 @@ const alertBanner =  document.getElementById('alert');
 alertBanner.innerHTML = 
 `
 <div class="alert-banner">
-    <p><strong>Alert:</strong> You have <strong>6</strong> over tasks to complete</p>
+    <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
     <p class="alert-banenr-close">x</p>
 </div>
 `
@@ -97,15 +97,15 @@ let dailyChart = new Chart(dailyCanvas, {
 const mobileCanvas = document.getElementById('mobile-chart');
 
 const mobileData = {
-    labels: ["Desktop", "Tablet", "Phones"],
+    labels: ["Phones", "Tablets", "Desktop"],
     datasets: [{
         label: '# of Users',
-        data: [2000, 550, 500],
+        data: [500, 550, 2000],
         borderWidth: 0,
         backgroundColor: [
-            '#7477BF',
-            '#78CF82',
-            '#51B6C8'
+            '#78CF82', // green
+            '#51B6C8', // bLue
+            '#7477BF' // purple
         ]
     }]
 };

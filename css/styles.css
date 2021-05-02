@@ -54,6 +54,10 @@ header {
   padding: 10px;
 }
 
+canvas {
+  max-width: 100%;
+}
+
 .notifications {
   display: flex;
   align-items: center;
@@ -94,17 +98,22 @@ header {
   margin: 8px;
 }
 
+/* Task alert notification */
 #alert {
   background-color: #7477bf;
   border-radius: 5px;
   padding: 8px;
-  margin: 5px;
+  margin: 10px;
   color: white;
   width: auto;
 }
 
-/* Navigation Buttons */
+.alert-banner {
+  display: flex;
+  justify-content: space-around;
+}
 
+/* Navigation Buttons */
 .navigation {
   grid-area: navigation;
   display: grid;
@@ -160,8 +169,21 @@ h3 {
 .traffic-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.mobile :first-child {
+  padding-bottom: 0;
+}
+
+#mobile-chart {
+  margin: auto;
+}
+
+.split-widget {
+  align-self: center;
 }
 
 .social-container {
@@ -264,6 +286,7 @@ h3 {
 .widget-container-full,
 .widget-container-half {
   width: 95vw;
+  margin: 10px;
 }
 
 .widget-container {

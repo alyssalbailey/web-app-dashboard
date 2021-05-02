@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>YourApp&trade; | Web Traffic Data</title>
   </head>
@@ -90,10 +91,9 @@
         <section class="mobile">
           <h3>Mobile Users</h3>
               <div class="split-widget"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-              <canvas id="mobile-chart" class="chartjs-render-monitor" height="230px" width="461px"></canvas>
+              <canvas id="mobile-chart" class="chartjs-render-monitor" height="50px" width="281px"></canvas>
               </div>
         </section>
-
 
     <!-- social status-->
     <section class="social">
@@ -237,13 +237,9 @@
       </section>
 
       <!-- settings section-->
-      <section class="settings">
+      <section class="settings" id="settings">
         <h3>Settings</h3>
-
-  <!-- custom CSS toggle code-->
-  <label class="switch-light switch-candy" onclick=""></label>
-    
-      <div class="toggle-container">
+        <div class="toggle-container">
         <h4>Send Email Notifications</h4>
         <label class="toggle-switch">
             <input type="checkbox" class="email-switch">
@@ -251,15 +247,16 @@
         </label>
         </div>
 
-        <div class="toggle-container">
-          <h4>Set Profile to Public</h4>
-          <label class="toggle-switch">
-              <input type="checkbox" class="email-switch">
-              <span class="slider"></span>
-          </label>
-          </div>
 
-      <!-- custom CSS toggle code-->
+        <div class="toggle-container">
+        <h4>Set Profile to Public</h4>
+        <label class="toggle-switch">
+            <input type="checkbox" class="email-switch">
+            <span class="slider"></span>
+        </label>
+        </div>
+
+      
       <select class="form-field" id="timezone">
         <option disabled selected>Select a Timezone</option>
         <option>Eastern</option>
