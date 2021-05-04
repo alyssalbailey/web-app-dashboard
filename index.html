@@ -247,47 +247,38 @@
       <section class="settings" id="settings">
         <h3>Settings</h3>
 
-      <!-- <div class="toggle-container">
-        <h4>Send Email Notifications</h4>
-        <label class="toggle-switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
-      </div> -->
-
       <div class="toggle-container">
         <label class="switch-light switch-candy" onclick="">
           <input type="checkbox">
-        
-          <strong>
-            Send Email Notification
-          </strong>
-        
+          <strong>Send Email Notification</strong>
           <span class="toggle-switch">
-            <span>Off</span>
-            <span>On</span>
+            <span></span>
+            <span class="slider">On</span>
             <a></a>
           </span>
         </label>
-
 
         <label class="switch-light switch-candy" onclick="">
           <input type="checkbox">
-          <h4>Set Profile to Public</h4>  
+          <strong>Set Profile to Public</strong>
           <span class="toggle-switch">
-            <span class="off-swtich">Off</span>
-            <span class="on-switch">On</span>
+            <span></span>
+            <span class="slider">On</span>
             <a></a>
           </span>
         </label>
+
+        
       </div>
       
       <select class="form-field" id="timezone">
         <option disabled selected>Select a Timezone</option>
         <option>Eastern</option>
-
-  <!-- more options-->
+        <option>Central</option>
+        <option>Mountain</option>
+        <option>Pactific</option>
         </select>
+
           <div class="settings-button">
               <button class="button-primary" id="save">Save</button>
               <button class="button-disabled" id="cancel">Cancel</button>

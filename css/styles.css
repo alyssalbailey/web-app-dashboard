@@ -363,6 +363,7 @@ h3 {
   margin-bottom: 25px;
 }
 
+/* Done */
 .toggle-container {
   display: flex;
   flex-direction: column;
@@ -377,12 +378,14 @@ h3 {
 }
 
 .toggle-switch {
+  margin: 5px;
+  width: 100px;
+  height: 40px;
   cursor: pointer;
 }
 
-.off-swtich {
-  background-color: #7477bf;
-  border: 1px solid #dbdcd0;
+.toggle-switch input {
+  display: none;
 }
 
 /* Media Queries: Tablet ----- */
