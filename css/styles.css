@@ -484,6 +484,7 @@ canvas {
 
   .platform-container {
     padding: 5px;
+    justify-content: center;
   }
 
   /* Traffic data graph */
